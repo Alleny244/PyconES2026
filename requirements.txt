@@ -1,0 +1,9 @@
+# Versions the measurements in bench/results.json were taken with.
+maturin==1.15.0
+numpy==2.5.4
+pyarrow==26.0.0
+python-pptx==1.0.2
+lxml==6.1.3
+
+# Only needed to regenerate slides/assets/linkedin_qr.png:
+# segno==1.6.6

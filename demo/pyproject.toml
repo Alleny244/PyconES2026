@@ -1,0 +1,12 @@
+[build-system]
+requires = ["maturin>=1.15,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "arrowbridge"
+version = "0.1.0"
+description = "Demo crate for the PyCon ES 2026 talk: zero-copy Python <-> Rust with PyO3 and Arrow"
+requires-python = ">=3.9"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

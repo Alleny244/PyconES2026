@@ -1,0 +1,115 @@
+{
+  "env": {
+    "cpu": "Intel(R) Core(TM) Ultra 7 165U",
+    "cores": 14,
+    "python": "3.12.9",
+    "pyarrow": "26.0.0",
+    "numpy": "2.5.4",
+    "platform": "Linux-7.0.11-200.fc44.x86_64-x86_64-with-glibc2.43"
+  },
+  "verify": {
+    "expected": 55.0,
+    "results": {
+      "sum_list": 55.0,
+      "sum_json": 55.0,
+      "sum_numpy": 55.0,
+      "sum_arrow": 55.0
+    },
+    "all_agree": true,
+    "py_buffer_addr": 990584432,
+    "rust_buffer_addr": 990584432,
+    "arrow_same_pointer": true,
+    "numpy_py_addr": 990584432,
+    "numpy_rust_addr": 990584432,
+    "numpy_same_pointer": true,
+    "null_aware_sum": 10.0,
+    "null_count_preserved": true,
+    "batch_shape": [
+      4,
+      2
+    ],
+    "batch_filter_sum": 159.0
+  },
+  "memory": {
+    "arrow": {
+      "approach": "arrow",
+      "baseline_mb": 56.3,
+      "after_load_mb": 143.4,
+      "peak_mb": 143.9,
+      "overhead_mb": 0.5
+    },
+    "numpy": {
+      "approach": "numpy",
+      "baseline_mb": 56.3,
+      "after_load_mb": 143.4,
+      "peak_mb": 143.5,
+      "overhead_mb": 0.1
+    },
+    "list": {
+      "approach": "list",
+      "baseline_mb": 56.2,
+      "after_load_mb": 143.2,
+      "peak_mb": 371.9,
+      "overhead_mb": 228.7
+    },
+    "json": {
+      "approach": "json",
+      "baseline_mb": 56.3,
+      "after_load_mb": 143.2,
+      "peak_mb": 431.1,
+      "overhead_mb": 287.9
+    }
+  },
+  "floats": {
+    "list_total": 460.96880399272777,
+    "json_total": 6035.561152006267,
+    "numpy_total": 6.4243194938171655,
+    "arrow_total": 3.489496506517753,
+    "list_call": 83.3042734884657,
+    "json_call": 280.6781570252497,
+    "numpy_call": 6.036828533979133,
+    "arrow_call": 3.4551254648249596,
+    "json_serialize_only": 5368.529060506262,
+    "to_pylist_only": 396.74811001168564,
+    "n": 5000000,
+    "payload_mb": 40.0,
+    "json_mb": 101.3
+  },
+  "strings": {
+    "n": 1000000,
+    "list_call": 136.23987149912864,
+    "arrow_call": 12.213754002004862,
+    "match_count": 250339,
+    "agree": true
+  },
+  "scaling": [
+    {
+      "n": 10000,
+      "list": 0.12359849642962217,
+      "json": 0.5049080064054579,
+      "numpy": 0.04971248563379049,
+      "arrow": 0.05087102181278169
+    },
+    {
+      "n": 100000,
+      "list": 1.0686659661587328,
+      "json": 5.099603004055098,
+      "numpy": 0.21754400222562253,
+      "arrow": 0.13123499229550362
+    },
+    {
+      "n": 1000000,
+      "list": 9.713588486192748,
+      "json": 47.42140450980514,
+      "numpy": 1.2898184941150248,
+      "arrow": 0.6794259825255722
+    },
+    {
+      "n": 10000000,
+      "list": 163.36056051659398,
+      "json": 533.1035319832154,
+      "numpy": 12.094115983927622,
+      "arrow": 6.302585476078093
+    }
+  ]
+}

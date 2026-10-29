@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Rust
+demo/target/
+
+# Build output -- regenerate with build_deck.py + soffice
+slides/render/
+
+# LibreOffice / editor lock files
+.~lock.*#
+*.swp
+.DS_Store
