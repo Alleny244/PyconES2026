@@ -172,9 +172,7 @@ def title(s, head, kicker=None):
 
 
 def footer(s, n):
-    text(s, L, Inches(6.95), Inches(9.0), Inches(0.32),
-         f"Zero-Copy Python + Rust  ·  PyCon ES 2026  ·  {REPO}",
-         size=T_FOOTER, color=MUTED)
+    """Slide number only. The repo link lives on the final slide alone."""
     text(s, Inches(11.6), Inches(6.95), Inches(0.9), Inches(0.32), str(n),
          size=T_FOOTER, color=MUTED, align=PP_ALIGN.RIGHT)
 
@@ -416,9 +414,6 @@ def build():
            ("  ·  Associate Software Engineer, Red Hat", INK2, False)],
           [("PyCon ES 2026  ·  8 Nov  ·  Aula B7", INK2, False)]],
          size=T_BODY_SM, spacing=1.3)
-    text(s, L, Inches(6.35), CW, Inches(0.5),
-         [[("Slides and code:  ", INK2, False), (REPO, ACCENT, True)]],
-         size=T_BODY_SM)
 
     # ---- 2 ---------------------------------------------------------------
     s = nxt("[0:45] Name the file out loud — sensors.parquet, five million "
