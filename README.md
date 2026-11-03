@@ -8,6 +8,8 @@ Allen Y — Associate Software Engineer, Red Hat.
 | Path | What it is |
 |---|---|
 | `slides/pycones2026-zero-copy-python-rust.pptx` | The deck — 36 slides, speaker notes on every slide |
+| `SCRIPT.md` | Speaker script for all 39 slides, with timing cues and Q&A prep |
+| `STUDY_PLAN.md` | 10-day preparation plan up to the talk |
 | `slides/build_deck.py` | Generates the deck; reads every number from `bench/results.json` |
 | `slides/assets/` | Speaker headshot (circular crop) and the LinkedIn QR |
 | `demo/` | The Rust extension (`arrowbridge`) — PyO3 + Arrow C Data Interface |

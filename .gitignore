@@ -9,6 +9,17 @@ demo/target/
 # Build output -- regenerate with build_deck.py + soffice
 slides/render/
 
+# Personal prep -- speaker script, study material, Q&A notes.
+# Source and rendered PDF both stay local. Rebuild with tools/build_notes.py
+SCRIPT.md
+SCRIPT.pdf
+STUDY_NOTES.md
+STUDY_NOTES.pdf
+STUDY_PLAN.md
+STUDY_PLAN.pdf
+QA.md
+QA.pdf
+
 # LibreOffice / editor lock files
 .~lock.*#
 *.swp

@@ -34,7 +34,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 RESULTS = json.load(open(os.path.join(ROOT, "bench", "results.json")))
 
-REPO = "github.com/<your-handle>/pycones26-arrow-pyo3"
+REPO = "github.com/Alleny244/PyconES2026"
 LINKEDIN = "linkedin.com/in/allen-yesudasan"
 ASSETS = os.path.join(HERE, "assets")
 
